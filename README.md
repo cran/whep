@@ -6,8 +6,12 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/eduaguilera/whep/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/eduaguilera/whep/actions/workflows/R-CMD-check.yaml)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/whep)](https://CRAN.R-project.org/package=whep)
 [![whep status
 badge](https://eduaguilera.r-universe.dev/whep/badges/version)](https://eduaguilera.r-universe.dev/whep)
+[![Codecov test
+coverage](https://codecov.io/gh/eduaguilera/whep/branch/main/graph/badge.svg)](https://app.codecov.io/gh/eduaguilera/whep?branch=main)
 <!-- badges: end -->
 
 ## Project
@@ -76,20 +80,17 @@ You can install the stable version on CRAN:
 install.packages('whep')
 ```
 
-You can also install the stable version on R-universe:
+If you want the development version of `whep`, you can:
 
 ``` r
+# Install from GitHub
+pak::pak("eduaguilera/whep")
+
+# Install from R-universe
 install.packages(
   "whep",
   repos = c("https://eduaguilera.r-universe.dev", "https://cloud.r-project.org")
 )
-```
-
-If you want the development version of `whep`, you can install it from
-[GitHub](https://github.com/eduaguilera/whep) with:
-
-``` r
-pak::pak("eduaguilera/whep")
 ```
 
 ## Usage
@@ -113,10 +114,10 @@ package creation. The process is roughly summarized in:
 - Create pull requests. Ask for review.
 
 The project is starting with **contributors** that are still learning
-about coding and best practices. For this reason **we have created a
-guide** explaining most of the things you need from the previous steps,
-covering both git and R package development. You can find the guide
-[**here**](https://eduaguilera.github.io/whep/articles/workflow-intro.html).
-Anyone is welcome to contribute, but we highly recommend to go through
-this guide to become familiar with the workflow if you are still not
-used to it.
+about coding and best practices. For this reason, if you’re
+**inexperienced**, we have written a **small free online book**
+explaining most of the things you need from the previous steps, covering
+both git and R package development. You can directly **access it
+[here](https://lbm364dl.github.io/follow-the-workflow/)**. Anyone is
+welcome to contribute, but we highly recommend to go through this guide
+to become familiar with the workflow if you are still not used to it.
